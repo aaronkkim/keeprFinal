@@ -2,7 +2,6 @@
 <div>
   <Navbar></Navbar>
   <div id="app">
-    <img src="./assets/logo.jpg">
     <router-view></router-view>
   </div>
 </div>
