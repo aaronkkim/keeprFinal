@@ -92,7 +92,7 @@ export default {
 				}).catch(handleError)
 		},
 		register(n, e, p) {
-			api.post('https://aaronkeepr.herokuapp.com//register', {
+			api.post('https://aaronkeepr.herokuapp.com/register', {
 				name: n,
 				email: e,
 				password: p
@@ -102,7 +102,7 @@ export default {
 				}).catch(handleError)
 		},
 		authenticate() {
-			api.get('https://aaronkeepr.herokuapp.com//authenticate')
+			api.get('https://aaronkeepr.herokuapp.com/authenticate')
 				.then(res => {
 					if (res.data.data) {
 						state.activeUser = res.data.data
